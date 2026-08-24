@@ -73,6 +73,19 @@ cat input/file01 input/file02  | python Mapper.py | sort | python Reducer.py
 
 Once you have your code working on Coding, you're ready to spend some dollars on `dataproc`. Spin up a cluster with one master node and two worker nodes.
 
+I had troubles with the browser-based user interface, but this command worked:
+
+```
+gcloud dataproc clusters create test-dataproc \
+    --project=lab2-470203 \
+    --region=us-east4 \
+    --zone=us-east4-a \
+    --master-machine-type=e2-standard-2 \
+    --worker-machine-type=e2-standard-2 \
+    --num-workers=2 \
+    --public-ip-address
+```
+
 Login to the master node and checkout your Git repo on that system. You may need to create additional rules or modify parts of the Makefile to run your application in that environment because they use a different version of Java and Hadoop and there are dependences on the installation paths.
 
 Also, as you go through a edit-debug cycle on `dataproc`, you'll need to remove the old output directory prior to re-running your application. You can do that using `hdfs dfs -rm -r /user/user/output`.
