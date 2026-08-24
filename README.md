@@ -4,7 +4,7 @@ In this lab, you're going to take WordCount (an existing Hadoop application that
 
 To Do Before Starting:
 + Read through the Hadoop Tutorial mentioned above. If you're unfamilar with Java, we recommend that you use the Streaming API and use Python.
-+ The `dataproc` QwikLab if you haven't already. This will get you familiar with starting a cluster on the Google Cloud Platform.
++ The `dataproc` Google Skills lab if you haven't already. This will get you familiar with starting a cluster on the Google Cloud Platform.
 
 You should first confirm that you can run the existing WordCount1 program on the Coding environment and (later) on the Google `dataproc` environment. Then, create the URLCount tool using the Coding environment -- use that easier (and cheaper) environment to debug your code. Then, lastly, run your URLCount implementation using Google's `dataproc`.
 
@@ -99,7 +99,7 @@ time hadoop jar....
 
 You should create a file `SOLUTION.md` that briefly describes your solution and what software is needed for it to run. You should indicate what resources you used and anyone you worked with as described in the course collaboration policy.
 
-Note that there should be four URL's that appear more than 5 times. Your output should match the following.
+The output will vary somewhat, as it depends on when you downloaded the files using _make prepare_.  It should look somewhat like this:
 ```
 #cite_note-releases-2 7
 /wiki/Doi_(identifier) 17
