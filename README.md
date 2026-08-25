@@ -108,7 +108,6 @@ The output will vary somewhat, as it depends on when you downloaded the files us
 mw-data:TemplateStyles:r999302996 110
 ```
 
-The Java WordCount implementation used a `Combiner` to improve efficiency, but that may cause problems for this application and produce a different output. Explain why this would be the case (even if you didn't implement the Java version).
 
 You should also include a comparison of the 2-node and 4-node execution time. Discuss the execution times and any suprising outcomes.
 
